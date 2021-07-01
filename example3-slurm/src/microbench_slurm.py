@@ -17,7 +17,7 @@ class MBHostCpuMaxFreq(microbench._NeedsPsUtil):
         bm_data['cpu_freq_max'] = psutil.cpu_freq().max
 
 class MyBench(MicroBench, MBFunctionCall, MBPythonVersion, MBHostInfo, MBHostCpuMaxFreq, MBHostRamTotal):
-    outfile = '/home/lubboca/microbench/my-benchmarks'
+    outfile = 'microbench_slurm.json'
     capture_versions = (np, )  # Or use MBGlobalPackages/MBInstalledPackages
     env_vars = ('SLURM_ARRAY_TASK_ID', )
     
