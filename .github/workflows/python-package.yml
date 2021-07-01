@@ -14,6 +14,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -l {0}
 
     steps:
     - uses: actions/checkout@v2
@@ -23,8 +26,6 @@ jobs:
         activate-environment: microbench-examples
         environment-file: environment.yml
         python-version: 3.9
-    - name: conda activate
-      run: conda activate microbench-examples
     - name: conda info
       run: conda info
     - name: Test with pytest
