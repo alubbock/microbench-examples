@@ -1,0 +1,5 @@
+microbench==0.7
+nbval==0.9.6
+seaborn==0.11.1
+pandas==1.2.5
+pytest==6.2.4
