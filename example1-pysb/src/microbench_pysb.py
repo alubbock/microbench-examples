@@ -15,7 +15,7 @@ import psutil
 
 
 class EarmBench(MicroBench, MBCondaPackages, MBHostInfo):
-    outfile = 'earmbenchmarks.json'
+    outfile = 'microbench_pysb.json'
     telemetry_interval = 2
 
     @staticmethod
